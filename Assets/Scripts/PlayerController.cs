@@ -68,8 +68,8 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Started Coroutine at timestamp : " + Time.time);
 
         //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("MiniGame");
+        yield return new WaitForSeconds(3.5f);
+        SceneManager.LoadScene("Level 2");
 
         //After we have waited 5 seconds print the time again.
         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
